@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <title>Curso Javascript</title>
+  </head>
+
+  <body>
+    <script>
+      // for, foreach, while
+
+      // Recomendado quando se sabe o tamanho do array
+      for (var i = 1; i <= 100; i++) {
+        //console.log(i); // 0,1,2,3,4...
+      }
+
+      // Recomendado quando nao se sabe quantos items existem no array
+      // ou quantas vezes são necessárias para rodar
+      var j = 0;
+      while (j < 100) {
+        //console.log(j);
+        j++;
+      }
+
+      // Recomendado quando se esta utilizando arrays que podem crescer ou diminuir
+      var vetor = [1, 2, 3, 4, 5];
+      vetor.forEach(item => {
+        console.log(item);
+      });
+    </script>
+  </body>
+</html>
