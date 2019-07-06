@@ -5,6 +5,26 @@
   </head>
 
   <body>
-    <script></script>
+    <div id="app">
+      <button onclick="mostraAlerta()">
+        Me pressione
+      </button>
+      <button onmouseover="mostraAlerta()">
+        Passe por mim
+      </button>
+      <input onkeypress="mostraAlerta()" />
+      <input type="password" id="senha" />
+    </div>
+
+    <script>
+      function mostraAlerta() {
+        alert("Hello World!");
+      }
+      // Executando função
+      // mostraAlerta();
+
+      // Passando a função como parâmetro
+      // console.log(mostraAlerta);
+    </script>
   </body>
 </html>
